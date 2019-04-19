@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars the Red Planet</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data!</a></p>
+    </div>
+
+    <div>
+    <h2>Latest Mars News:</h2>
+    <ul>
+    <li>{{ mars_info.news_title }}
+    <p>{{ mars_info.news_p }}</p>
+    </li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+        <h3>Featured Mars Image</h3>
+        <img src="{{ mars_info.img_url }}" alt="Mars the Red Planet">
+      </div>
+    </div>
+  </div>  
+
+</body>
+</html>
